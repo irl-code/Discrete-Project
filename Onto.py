@@ -21,7 +21,7 @@ def is_onto(func, dom, codom):
 def SurjectivePlot(func, dom, codom):
     x = np.array(dom)
     y = np.array([func(val) for val in dom])
-    plt.plot(x, y, marker='o', color='purple', ms='7')  
+    plt.plot(x, y, marker='D', color='purple', ms='8')  
     font1 = {'fontsize': 15}
     font2 = {'fontsize': 20}
     plt.xlabel('x', fontdict = font1)
