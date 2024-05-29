@@ -18,9 +18,22 @@ def is_onto(func, dom, codom):
     else:
         return False    
 
+def SurjectivePlot(func, dom, codom):
+    x = np.array(dom)
+    y = np.array([func(val) for val in dom])
+    plt.plot(x, y, marker='o', color='purple', ms='7')  
+    font1 = {'fontsize': 15}
+    fon2 = {'fontsize': 20}
+    plt.xlabel('x', fontdict = font1)
+    plt.ylabel('f(x)' , fontdict = font1)
+    plt.title('Onto Function', fontdict = font2)
+    plt.grid(axis = 'y')
+    plt.savefig('onto.png')
+
 def f(x):
-    return (x**2) + 10
-codoMain = [11, 14, 19, 26]
-doMain = [-1, 1, 2, -2, 3, 4, 7, 8, 9, 10]
+    return x + 10
+codoMain = [11, 12, 13, 14]
+doMain = [1, 2, 3, 4]
 result = is_onto(f, doMain, codoMain)
-print(f"The function is onto: {result}")
+print(f"Is the function is Surjective: {result}")
+SurjectivePlot(f, doMain, codoMain)

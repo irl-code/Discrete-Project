@@ -11,7 +11,7 @@ def is_one_to_one(func, dom):
         print(f"f({x}) = {value}")
     return True
 
-def plot_one_to_one(func, dom):
+def InjectivePlot(func, dom):
     x = np.array(dom)
     y = np.array([func(val) for val in dom])
     plt.plot(x, y, marker = 'o', color = 'hotpink', ms = '6')  
@@ -28,5 +28,5 @@ def f(x):
 
 domain = [-1, -2, -3, -4, 1, 2, 3, 4]
 result = is_one_to_one(f, domain)
-print(f"The function is one-to-one: {result}")
-plot_one_to_one(f, domain)
+print(f"Is the function is Injective: {result}")
+InjectivePlot(f, domain)
