@@ -16,10 +16,10 @@ def InjectivePlot(func, dom):
     y = np.array([func(val) for val in dom])
     plt.plot(x, y, marker = 'o', color = 'hotpink', ms = '6')  
     font1 = {'fontsize': 15}
-    fon2 = {'fontsize': 20}
+    font2 = {'fontsize': 20}
     plt.xlabel('x', fontdict= font1)
     plt.ylabel('f(x)', fontdict = font1)
-    plt.title('One-to-One Function', fontdict = font1)
+    plt.title('One-to-One Function', fontdict = font2)
     plt.grid(axis = 'y')
     plt.savefig('One to one.png')  
 

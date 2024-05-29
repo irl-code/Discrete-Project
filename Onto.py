@@ -23,7 +23,7 @@ def SurjectivePlot(func, dom, codom):
     y = np.array([func(val) for val in dom])
     plt.plot(x, y, marker='o', color='purple', ms='7')  
     font1 = {'fontsize': 15}
-    fon2 = {'fontsize': 20}
+    font2 = {'fontsize': 20}
     plt.xlabel('x', fontdict = font1)
     plt.ylabel('f(x)' , fontdict = font1)
     plt.title('Onto Function', fontdict = font2)
