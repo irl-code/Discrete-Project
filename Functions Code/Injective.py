@@ -14,17 +14,17 @@ def is_one_to_one(func, dom):
 def InjectivePlot(func, dom):
     x = np.array(dom)
     y = np.array([func(val) for val in dom])
-    plt.plot(x, y, marker = 'o', color = 'hotpink', ms = '6')  
+    plt.plot(x, y, marker = 'o', color = 'hotpink', ms = '8', linewidth = 2.5)  
     font1 = {'fontsize': 15}
     font2 = {'fontsize': 20}
     plt.xlabel('x', fontdict= font1)
     plt.ylabel('f(x)', fontdict = font1)
     plt.title('One-to-One Function', fontdict = font2)
     plt.grid(axis = 'y')
-    plt.savefig('One to one.png')  
+    plt.savefig('Injective.png')  
 
 def f(x):
-    return x + 1
+    return x**2
 
 domain = [-1, -2, -3, -4, 1, 2, 3, 4]
 result = is_one_to_one(f, domain)

@@ -13,7 +13,6 @@ def is_onto(func, dom, codom):
         else:    
             print(f"f({x}) = {value} (But it is not in the codomain)")
     if len(set) == len(codom):
-          print(len(set), len(codom))
           return True
     else:
         return False    
@@ -21,14 +20,14 @@ def is_onto(func, dom, codom):
 def SurjectivePlot(func, dom, codom):
     x = np.array(dom)
     y = np.array([func(val) for val in dom])
-    plt.plot(x, y, marker='D', color='purple', ms='8')  
+    plt.plot(x, y, marker='o', color='purple', ms='10', linewidth = 2.8)  
     font1 = {'fontsize': 15}
     font2 = {'fontsize': 20}
     plt.xlabel('x', fontdict = font1)
     plt.ylabel('f(x)' , fontdict = font1)
     plt.title('Onto Function', fontdict = font2)
     plt.grid(axis = 'y')
-    plt.savefig('onto.png')
+    plt.savefig('Surjective.png')
 
 def f(x):
     return x + 10
