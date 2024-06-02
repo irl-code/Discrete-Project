@@ -47,25 +47,25 @@ import matplotlib.pyplot as plt
 
 def IsBijective(func, dom, codom):
     def is_one_to_one():
-        values_seen = []
+        set = []
         for x in dom:
             value = func(x)
-            if value in values_seen:
+            if value in set:
                 return False
-            values_seen.append(value)
+            set.append(value)
             print(f"f({x}) = {value}")
         return True
     
     def is_onto():
-        values_seen = set()
+        set = set()
         for x in dom:
             value = func(x)
             if value in codom:
-                values_seen.add(value)
+                set.append(value)
                 print(f"f({x}) = {value}")
             else:
                 print(f"f({x}) = {value} (But it is not in the codomain)")
-        return len(values_seen) == len(codom)
+        return len(set) == len(codom)
     
     if is_one_to_one() and is_onto():
         return True
