@@ -44,7 +44,7 @@ def BijectivePlot(func, dom, codom):
     plt.ylabel('f(x)' , fontdict = font1)
     plt.title('Bjiective Function', fontdict = font2)
     plt.grid(axis = 'y')
-    plt.savefig('bijective.png')    
+    plt.savefig('Bijective.png')    
     
 def f(x):
     return 2 * x
