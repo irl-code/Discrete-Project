@@ -26,7 +26,7 @@ def InjectivePlot(func, dom):
 def f(x):
     return x**2
 
-domain = [-1, -2, -3, -4, 1, 2, 3, 4]
+domain = [-1, -2, 3, 4, 5]
 result = is_one_to_one(f, domain)
 print(f"Is the function is Injective: {result}")
 InjectivePlot(f, domain)
