@@ -6,6 +6,8 @@ def is_one_to_one(func, dom):
     set = []
     for x in dom:
         value = func(x)
+        if value == "undefined":
+            return False
         if value in set:
             return False
         set.append(value)
@@ -27,10 +29,18 @@ def InjectivePlot(func, dom):
 
 
 def f(x):
-    return x**2
+    try:
+        # return 10 / x
+        return 3 + x
+        # return x**2
+    except ZeroDivisionError:
+        return "undefined"
 
 
-domain = [1, 2, 3, 4]
+# domain = [4, 6, 8, 12]
+# domain = [0, 1, 2, 6, 4]
+domain = [1, 2, 3, -1, -2, 4]
+# domain = [0, 1, 2, 6, 4]
 result = is_one_to_one(f, domain)
 print(f"Is the function is Injective: {result}")
 InjectivePlot(f, domain)
