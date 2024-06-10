@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 
 
 def is_onto(func, dom, codom):
-    check = 0
     set = []
     for x in dom:
         value = func(x)
@@ -20,7 +19,7 @@ def is_onto(func, dom, codom):
         return False
 
 
-def SurjectivePlot(func, dom, codom):
+def SurjectivePlot(func, dom):
     x = np.array(dom)
     y = np.array([func(val) for val in dom])
     plt.plot(x, y, marker="o", color="purple", ms="10", linewidth=2.8)
@@ -39,6 +38,6 @@ def f(x):
 
 codoMain = [11, 12, 13, 14]
 doMain = [1, 2, 3, 4]
-result = is_onto(f, doMain, codoMain)
+result = is_onto(f, doMain)
 print(f"Is the function is Surjective: {result}")
 SurjectivePlot(f, doMain, codoMain)
