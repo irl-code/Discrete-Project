@@ -15,7 +15,6 @@ def IsBijective(func, dom, codom):
         return True
 
     def is_onto():
-        check = 0
         set = []
         print("Checking onto property")
         for x in dom:
@@ -23,7 +22,6 @@ def IsBijective(func, dom, codom):
             if value in codom:
                 if value not in set:
                     set.append(value)
-                    check += 1
                 print(f"f({x}) = {value}")
             else:
                 print(f"f({x}) = {value} (But it is not in the codomain)")
@@ -38,7 +36,7 @@ def IsBijective(func, dom, codom):
         return False
 
 
-def BijectivePlot(func, dom, codom):
+def BijectivePlot(func, dom):
     x = np.array(dom)
     y = np.array([func(val) for val in dom])
     plt.plot(x, y, marker="o", color="orange", ms="10", linewidth=3)
@@ -58,5 +56,5 @@ def f(x):
 Domain = [2, 4, 6, 8, 9]
 Codomain = [4, 8, 12, 16]
 result = IsBijective(f, Domain, Codomain)
-BijectivePlot(f, Domain, Codomain)
+BijectivePlot(f, Domain)
 print(f"Is the function is Bijective: {result}")
