@@ -1,16 +1,16 @@
-Student ID,Student Name,Date,Task Performed
-FA23-BSCS-0124,Hamza Wahab,05 May,Studied Intro to Python on DataCamp
-FA23-BSCS-0124,Hamza Wahab,10 May,Completed Intermediate Python course on DataCamp
-FA23-BSCS-0124,Hamza Wahab,15 May,Researched injective functions on W3Schools
-FA23-BSCS-0124,Hamza Wahab,20 May,Developed the injective function using Python and NumPy
-FA23-BSCS-0124,Hamza Wahab,25 May,Created graphical visualization of the injective function using Matplotlib
-FA23-BSCS-0104,Muhammad Hussain,06 May,Started learning Intro to Python on DataCamp
-FA23-BSCS-0104,Muhammad Hussain,11 May,Finished Intermediate Python course on DataCamp
-FA23-BSCS-0104,Muhammad Hussain,16 May,Investigated surjective functions through W3Schools resources
-FA23-BSCS-0104,Muhammad Hussain,21 May,Implemented surjective function with Python and NumPy
-FA23-BSCS-0104,Muhammad Hussain,26 May,Developed visualization for the surjective function using Matplotlib
-FA23-BSCS-0099,Muhammad Khizar,07 May,Engaged in Intro to Python course on DataCamp
-FA23-BSCS-0099,Muhammad Khizar,12 May,Completed Intermediate Python on DataCamp
-FA23-BSCS-0099,Muhammad Khizar,17 May,Explored bijective functions with resources from W3Schools
-FA23-BSCS-0099,Muhammad Khizar,22 May,Created the bijective function using Python and NumPy
-FA23-BSCS-0099,Muhammad Khizar,27 May,Generated visual representation of the bijective function using Matplotlib
+Student ID, Student Name, Date, Task Performed
+FA23-BSCS-0124, Hamza Wahab,05 May, Studied Intro to Python on DataCamp
+FA23-BSCS-0124, Hamza Wahab,10 May, Completed Intermediate Python course on DataCamp
+FA23-BSCS-0124, Hamza Wahab,15 May, Researched injective functions on W3Schools
+FA23-BSCS-0124, Hamza Wahab,20 May, Developed the injective function using Python and NumPy
+FA23-BSCS-0124, Hamza Wahab,25 May, Created graphical visualization of the injective function using Matplotlib
+FA23-BSCS-0104, Muhammad Hussain,06 May, Started learning Intro to Python on DataCamp
+FA23-BSCS-0104, Muhammad Hussain,11 May, Finished Intermediate Python course on DataCamp
+FA23-BSCS-0104, Muhammad Hussain,16 May, Investigated surjective functions through W3Schools resources
+FA23-BSCS-0104, Muhammad Hussain,21 May, Implemented surjective function with Python and NumPy
+FA23-BSCS-0104, Muhammad Hussain,26 May, Developed visualization for the surjective function using Matplotlib
+FA23-BSCS-0099, Muhammad Khizar,07 May, Engaged in Intro to Python course on DataCamp
+FA23-BSCS-0099,Muhammad Khizar,12 May, Completed Intermediate Python on DataCamp
+FA23-BSCS-0099, Muhammad Khizar,17 May, Explored bijective functions with resources from W3Schools
+FA23-BSCS-0099, Muhammad Khizar,22 May, Created the bijective function using Python and NumPy
+FA23-BSCS-0099, Muhammad Khizar,27 May, Generated visual representation of the bijective function using Matplotlib
